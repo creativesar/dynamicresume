@@ -14,22 +14,22 @@ form.addEventListener('submit', (event: Event) => {
     const experience = (document.getElementById('experience') as HTMLTextAreaElement).value;
     const skills = (document.getElementById('skills') as HTMLTextAreaElement).value;
 
-    // Generate resume with dynamic content
+    // Generate resume with dynamic content and make sections editable
     const resumeData = `
     <h2><b>Resume</b></h2>
     <h3>Personal Information</h3>
-    <p><b>Name:</b> ${name}</p>
-    <p><b>Email:</b> ${email}</p>
-    <p><b>Phone:</b> ${phone}</p>
+    <p contenteditable="true"><b>Name:</b> ${name}</p>
+    <p contenteditable="true"><b>Email:</b> ${email}</p>
+    <p contenteditable="true"><b>Phone:</b> ${phone}</p>
 
     <h3>Education</h3>
-    <p>${education}</p>
+    <p contenteditable="true">${education}</p>
 
     <h3>Experience</h3>
-    <p>${experience}</p>
+    <p contenteditable="true">${experience}</p>
 
     <h3>Skills</h3>
-    <p>${skills}</p>
+    <p contenteditable="true">${skills}</p>
     `;
 
     // Display the generated resume
