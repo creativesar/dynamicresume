@@ -18,18 +18,18 @@ form.addEventListener('submit', (event: Event) => {
     const resumeData = `
     <h2><b>Resume</b></h2>
     <h3>Personal Information</h3>
-    <p contenteditable="true"><b>Name:</b> ${name}</p>
-    <p contenteditable="true"><b>Email:</b> ${email}</p>
-    <p contenteditable="true"><b>Phone:</b> ${phone}</p>
+    <p"><b>Name:</b> ${name}</p>
+    <p><b>Email:</b> ${email}</p>
+    <p><b>Phone:</b> ${phone}</p>
 
     <h3>Education</h3>
-    <p contenteditable="true">${education}</p>
+    <p>${education} </span></p>
 
     <h3>Experience</h3>
-    <p contenteditable="true">${experience}</p>
+    <p>${experience}</span></p>
 
     <h3>Skills</h3>
-    <p contenteditable="true">${skills}</p>
+    <p>${skills} </span></p>
     `;
 
     // Display the generated resume
